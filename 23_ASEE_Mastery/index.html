@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Mastery Grading in a Software Engineering Course</title>
+
+		<meta name="description" content="A talk on applying Mastery Grading to an undergraduate Software Engineering course">
+		<meta name="author" content="Carlos Rojas and Gina Quan">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/carlos.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h3>Mastery Grading in a Software Engineering Course</h3>
+					<p>Carlos Rojas, Ph.D. <br> Gina Quan, Ph.D.</p>
+					<small>San José State University</small>
+
+					<aside class="notes">I am carlos Rojas and together with my colleague Prof. Gina Quan at SJSU we designed a study to look at how students attitude towards mastery grading evolved over the semester.<br>
+					I was the instructor of record for this SE course and Dr. Quan helped in the design of the study and the data management/analysis.
+					</aside>
+				</section>
+
+
+				<section>
+					<h3>Motivation</h3>
+					<blockquote style="width:74%; box-shadow: none;">
+						<p>Our current system has turned higher education into a game that students win when they obtain the most coveted rewards—that is, high grades—for putting in the least amount of time and effort.<br><small><a href="http://www.lindanilson.com">-Linda B. Nilson, Ph.D.</a></small></p>
+					</blockquote>
+
+					<footer style="text-align: left; font-size:40%;z-index:1;padding:0.5em">L. B. Nilson. <em>Specifications Grading: Restoring Rigor, Motivating Students, and Saving Faculty Time</em>. Stylus Publishing, LLC, 2015</footer>
+
+					<aside class="notes">We want to incentivize learning not points gathering.</aside>
+				</section>
+
+
+				<section>
+					<h3>What is Mastery Grading?</h3>
+					<p class="fragment">Students are assessed on whether they meet a threshold, i.e. <em>mastery</em></p>
+					<p class="fragment">Each assignment has rubrics that establishes the threshold</p>
+					<p class="fragment">There is no partial credit</p>
+					<p class="fragment">Students are allowed retakes for assessments</p>
+
+					<aside class="notes">Assessed on each assignment</aside>
+				</section>
+
+				<section>
+					<h3>Course Background</h3>
+					<ul>
+						<li class="fragment">First upper division course for <em>Computer Engineering</em> and <em>Software Engineering</em> majors</li>
+						<li class="fragment">Spring 2022 taught two sections with 34 and 49 respectively (N=83)</li>
+						<li class="fragment">10%-30% non-majors</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>How I applied Mastery Grading?</h3>
+					<ul>
+						<li class="fragment">I created several assessment categories</li>
+						<li class="fragment">Each category specifies how many assignments need to pass to earn letter grade</li>
+						<li class="fragment">Created a currency called Tokens to limit revisions and add flexibility to their learning</li>
+					</ul>
+					<div class="r-hstack justify-center fragment">
+						<div data-id="box1" style="background: #ea7317; width: 220px; height: 100px; margin: 10px; border-radius: 5px;"><p>Quizzes</p></div>
+						<div data-id="box2" style="background: #fec601; width: 300px; height: 100px; margin: 10px; border-radius: 5px;"><p>Homeworks</p></div>
+						<div data-id="box3" style="background: #73bfb8; width: 220px; height: 100px; margin: 10px; border-radius: 5px;"><p>Project</p></div>
+						<div data-id="box4" style="background: #3da5d9; width: 220px; height: 100px; margin: 10px; border-radius: 5px;"><p>Exams</p></div>
+					</div>
+				</section>
+
+				<section>
+					<h3>Letter Grade Mapping</h3>
+					<div class="r-stack">
+						<img class="fragment fade-out" src="img/t1_grading_map.png" data-fragment-index="1" width="85%">
+						<img class="fade-up" src="img/t1_grading_map_2.png" data-fragment-index="2" width="85%">
+						<img class="fragment" src="img/t1_grading_map_3.png" data-fragment-index="3" width="85%">
+					</div>
+					<p class="fragment">Assignments were graded on a tertiary system: needs revision, low pass, and high pass</p>
+					<p class="fragment">A student needs to meet the grade for <b>every</b> category to earn that grade</p>
+				</section>
+
+				<section>
+					<h1>Results</h1>
+				</section>
+				<section>
+					<h3>Method & Goal</h3>
+					<p class="fragment">We survey students at regular intervals during the semester</p>
+					<p class="fragment">We wanted to know how students attitude toward mastery grading evolved over time</p>
+				</section>
+
+				<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+					<h3>Student Survey Distributions</h3>
+					<img data-id="s1" class="fragment" src="img/f1_dist_student_surveys.png">
+					<img data-id="s2" class="fragment" src="img/f2_dist_student_surveys.png">
+					<aside class="notes">Figure 1 represents the Likert items from the first survey administered in the class. This data suggests that most respondents felt they had the background knowledge and resources needed to succeed in the class, and had an understanding of how to improve their grade. However, the median respondent did not prefer mastery grading over other forms of assessment.
+
+					Comparing Figures 1 and 2 we see that responses to Survey 5, on the whole, were more likely to “Agree” on most items.
+					</aside>
+				</section>
+
+				<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+					<h3>Student Survey Distributions</h3>
+					<div class="l-double">
+						<div>
+							<ul>
+								<li>First and last survey</li>
+								<li>Students felt they had the background knowledge to succeed</li>
+								<li>Understood how to to improve their grade</li>
+								<li>Median did not prefer mastery over other assessments</li>
+							</ul>
+						</div>
+						<div>
+							<img data-id="s1" src="img/f1_dist_student_surveys.png" >
+							<img data-id="s2" src="img/f2_dist_student_surveys.png" >
+						</div>
+					</div>
+					<aside class="notes">Figure 1 represents the Likert items from the first survey administered in the class. This data suggests that most respondents felt they had the background knowledge and resources needed to succeed in the class, and had an understanding of how to improve their grade. However, the median respondent did not prefer mastery grading over other forms of assessment.
+
+					Comparing Figures 1 and 2 we see that responses to Survey 5, on the whole, were more likely to “Agree” on most items.
+					</aside>
+				</section>
+
+				<section>
+					<h3>Results of all Surveys</h3>
+					<img src="img/f3_temporal.png">
+					<p class="fragment">Results of survey questions taken at five time points</p>
+					<p class="fragment">We converted the likert scale to range from -2 to +2 and averaged</p>
+
+					<aside class="notes">Dissatisfaction with Weighting of Mistakes</aside>
+
+				</section>
+
+				<section>
+					<h3>What did we learn?</h3>
+					<ul>
+						<li class="fragment">Need to invest in student buy-in and possibly departmental buy-in</li>
+						<li class="fragment">Course preparation is time consuming, but it can be done in stages</li>
+						<li class="fragment">Need to give consideration of how well your assessments map to the course learning outcomes</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Acknowledgements</h3>
+					<p>Teaching Experiment Academy (TEA)</p>
+					<p>Spring 2022 CMPE 131: Software Engineering class</p>
+					<aside class="notes"><ul><li>TEA for their guidance and funding to transition my course to mastery grading</li><li>Valuable feedback from my class</li></ul></aside>
+				</section>
+
+				<section style="text-align:left">
+					<h2>Thanks!</h2>
+					<p class="align-icon"><img class="j-icon" data-src="img/email_ico.png" alt="email"><a href="mailto:carlos.rojas@sjsu.edu">carlos.rojas@sjsu.edu</a></p>
+
+					<p class="align-icon"><img class="j-icon" data-src="img/website_ico.png" alt="Website"><a href="https://carlosrojas.xyz">https://carlosrojas.xyz</a></p>
+
+					<p class="align-icon"><img class="j-icon plain" data-src="img/mastodon_ico.png" alt="Mastodon"><a href="https://genomic.social/@cr">@cr</a></p>
+
+					<p class="align-icon"><img class="j-icon plain" data-src="img/github_ico.png" alt="GitHub"><a href="https://github.com/carlosrojas">@carlosrojas</a></p>
+				  </section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/math/math.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+				progress: true,
+				transition: 'fade',
+				totalTime: 900,
+				katex: {
+ 				   version: 'latest',
+ 				   delimiters: [
+ 				     {left: '$$', right: '$$', display: true},
+ 				     {left: '$', right: '$', display: false},
+ 				     {left: '\\(', right: '\\)', display: false},
+ 				     {left: '\\[', right: '\\]', display: true}
+ 				  ],
+ 				  ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+ 				},
+				pdfSeparateFragments: false,
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight, RevealMath.KaTeX ]
+			});
+		</script>
+	</body>
+</html>

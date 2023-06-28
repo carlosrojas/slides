@@ -1,0 +1,117 @@
+/**
+ * A simple theme for reveal.js presentations, similar
+ * to the default theme. The accent color is brown.
+ *
+ * This theme is Copyright (C) 2012-2013 Owen Versteeg, http://owenversteeg.com - it is MIT licensed.
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+
+// Override theme settings (see ../template/settings.scss)
+$mainFont: 'Palatino Linotype', 'Book Antiqua', Palatino, FreeSerif, serif;
+$mainColor: #000;
+$headingFont: 'Palatino Linotype', 'Book Antiqua', Palatino, FreeSerif, serif;
+$headingColor: #383D3D;
+$headingTextShadow: none;
+$headingTextTransform: none;
+$backgroundColor: #ffffff;
+$linkColor: #51483D;
+$linkColorHover: lighten( $linkColor, 20% );
+$selectionBackgroundColor: #26351C;
+
+.reveal a {
+  line-height: 1.3em;
+}
+
+// Change text colors against dark slide backgrounds
+@include dark-bg-text-color(#fff);
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+.j-icon {
+    margin-right: 1rem;
+}
+
+.align-icon {
+    display: flex;
+    align-items: center;
+}
+
+.l-double {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.l-multiple {
+    display: flex;
+    justify-content: space-around;
+}
+
+blockquote {
+    box-shadow: none;
+    width: 80%;
+    text-align: left;
+    line-height: 1.55;
+    font-size: 125%;
+    position: relative;
+    background: none;
+
+    p::before,
+    p::after {
+        position: absolute;
+        font-size: 2.5em;
+        font-family: Georgia, serif;
+        color: $headingColor;
+    }
+
+    p::before {
+        top: -0.125em;
+        left: -0.5em;
+        content: '\201C';
+    }
+
+    p::after {
+        bottom: -0.5em;
+        right: 0.125em;
+        content: '\201D';
+    }
+}
+
+// Accessible emojis ---------------------------
+span.emoji {
+    font-family: 'Apple Color Emoji', 'Segoe UI Emoji';
+    font-style: normal;
+    font-size: 125%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+span[role=img][aria-label],
+span[role=img][aria-label] {
+    position: relative;
+}
+
+span[role=img][aria-label]:focus::after,
+span[role=img][aria-label]:hover::after {
+    font-size: 25%;
+    font-family: $mainFont;
+    font-weight: 400;
+    position: absolute;
+    display: block;
+    line-height: 1.2;
+    content: attr(aria-label);
+    z-index: 1;
+    background: $mainColor;
+    color: $backgroundColor;
+    padding: 0.25em;
+    border: 1px solid $backgroundColor;
+}
